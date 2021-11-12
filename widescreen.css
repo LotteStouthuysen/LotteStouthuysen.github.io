@@ -1,0 +1,184 @@
+body {
+	margin:0;
+}
+h1{
+	font-weight:normal;
+}
+label{
+	width: 800px;
+}
+input{
+	width: 200px;
+	padding: 20px;
+	border: none;
+	font-size: 30px;
+	border-bottom: 5px solid #D4AF37;
+	
+}
+textarea{
+	width: 600px;
+	height: 100px;
+	padding:20px;
+	font-size: 30px;
+	border: none;
+	border-bottom: 5px solid #D4AF37;
+}
+.contactInfo{
+	 vertical-align: top;
+	 display: inline-block;
+	 background-color: #D4AF37;
+	 color: white;
+	 border-radius: 12px;
+	 padding: 40px;
+	 font-size: 24px;
+	 height: 520px;
+	 max-width: 500;
+	 margin-top: 300px;
+	 line-height: 1.2;
+	 font-family: Nunito Sans Bold;
+	 margin-left: 5%;
+}
+.contactForm{
+	margin-left: 5%;
+	margin-top: 25px;
+	 display: inline-block;
+	 width: 700px;
+	 margin-bottom: 200px;
+}
+.bodyHome{
+	margin-top: 100px;
+	width: 98%
+}
+.bodyWerkwijzen{
+	margin-left: 1%;	
+}
+.bodyTarieven{
+	margin-left: 1%;
+}
+.bodyBlog{
+	margin-left: 1%;	
+}
+.bodyContact{
+	margin-left: 2%;
+}
+.bodyText1{
+	display: inline-block; 
+	margin-left: 30px;
+	margin-top: 80px;
+	width: 40%;
+	font-size: 25px;
+	vertical-align: top;
+}
+.bodyblock2{
+	display: inline-block; 
+	margin-top: 100px;
+	margin-left: 10%;
+}
+.bodyblock1{
+	margin-left: 10%;
+}
+
+.bodyText2{
+	display: inline-block; 
+	float: top;
+	margin-top: 80px;
+	margin-left: 80px;
+	width: 40%;
+	font-size: 25px;
+	vertical-align: top;
+}
+
+.columnTarieven {
+	float: left;
+	width: 50%;
+	padding: 10px;
+  }
+
+.headerbalk{
+	height: 80px;
+	width: 98%;
+	background-color: #3B8686;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.instagramButton{
+	border: none;
+	background-color: #3B8686;	
+}
+button:hover{
+	cursor: pointer;
+}
+.facebookButton{
+	border: none;
+	background-color: #3B8686;
+}
+.phoneNumber{
+	float: left;
+}
+.facebookInstagram {
+	float: right; 
+	margin-top: 5px;
+	margin-right: 4%;
+}
+
+.logo{
+	margin-left: 30px;
+}
+/* vaste margin top, anders komen er problemen bij het vergroten/verkleinen van de schermhoogte */
+.navigation{
+	margin-top: 60px;
+	margin-right: 5%;
+	font-size: 30px;
+	float: right
+}
+/* vaste margin als spatie tussen de elementen, vorm geen probleem aangezien deze in een span zitten*/
+/* eventueel uitzoeken hoe de actieve pagina onderstreept kan zijn */
+a{
+	margin-left:10px;
+	color: #3B8686;
+	text-decoration: none;
+}
+
+a:hover {
+	color: orange;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:active {
+	color: orange;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* footerbalk absolute positie niet fixed om te voorkomen dat deze permanent aan de onderkant van het scherm hangt, niet mooi! */
+.footerbalk{
+	position: relatief;
+	height: 40px;
+	width: 98%;
+	background-color: #3B8686;
+	margin-left: 1%;
+	margin-right: 1%;
+	bottom:0;
+	color: white;
+}
+/* vaste margin in span --> blijft relatief */
+.footerTextLeft{
+	margin-left: 20px;
+	margin-top: 10px;
+	float: left;
+}
+/* vaste margin in span --> blijft relatief*/
+.footerTextRight{
+	float: right;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+.yellowImage:hover{
+	cursor: pointer;
+}
+
+.gebruiksvoorwaarden{
+	color: white;
+}
