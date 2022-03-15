@@ -2,94 +2,7 @@
 	<head>
 		<link rel='stylesheet' media="(min-width: 1500px)" type='text/css' href='widescreen.css'>
 		<link rel='stylesheet' media="(max-width: 1500px) and (min-width: 500px)" type='text/css' href='smallscreen.css'>
-		<style>
-		.bodyhome{
-	display: block;
-}
-.bodyWerkwijzen{
-	display: none;
-}
-.bodyTarieven{
-	display: none;
-}
-.bodyBlog{
-	display: none;
-}
-.bodyContact{
-	display: none;
-}
-		</style>
-		<script>
-
-function enableHome() {
-document.getElementById("homeBody").style.display = "block";
-document.getElementById("homeBody").disabled = "false";
-document.getElementById("werkwijzenBody").style.display = "none";
-document.getElementById("werkwijzenBody").disabled = "true";
-document.getElementById("tarievenBody").style.display = "none";
-document.getElementById("tarievenBody").disabled = "true";
-document.getElementById("blogBody").style.display = "none";
-document.getElementById("blogBody").disabled = "true";
-document.getElementById("contactBody").style.display = "none";
-document.getElementById("contactBody").disabled = "true";
-window.scrollTo(0, 0)
-}
-function enableWerkwijzen() {
-document.getElementById("homeBody").style.display = "none";
-document.getElementById("homeBody").disabled = "true";
-document.getElementById("werkwijzenBody").style.display = "block";
-document.getElementById("werkwijzenBody").disabled = "false";
-document.getElementById("tarievenBody").style.display = "none";
-document.getElementById("tarievenBody").disabled = "true";
-document.getElementById("blogBody").style.display = "none";
-document.getElementById("blogBody").disabled = "true";
-document.getElementById("contactBody").style.display = "none";
-document.getElementById("contactBody").disabled = "true";
-window.scrollTo(0, 0)
-}
-function enableTarieven() {
-document.getElementById("homeBody").style.display = "none";
-document.getElementById("homeBody").disabled = "true";
-document.getElementById("werkwijzenBody").style.display = "none";
-document.getElementById("werkwijzenBody").disabled = "true";
-document.getElementById("tarievenBody").style.display = "block";
-document.getElementById("tarievenBody").disabled = "none";
-document.getElementById("blogBody").style.display = "none";
-document.getElementById("blogBody").disabled = "true";
-document.getElementById("contactBody").style.display = "none";
-document.getElementById("contactBody").disabled = "true";
-window.scrollTo(0, 0)
-}
-function enableBlog() {
-document.getElementById("homeBody").style.display = "none";
-document.getElementById("homeBody").disabled = "true";
-document.getElementById("werkwijzenBody").style.display = "none";
-document.getElementById("werkwijzenBody").disabled = "true";
-document.getElementById("tarievenBody").style.display = "none";
-document.getElementById("tarievenBody").disabled = "true";
-document.getElementById("blogBody").style.display = "block";
-document.getElementById("blogBody").disabled = "false";
-document.getElementById("contactBody").style.display = "none";
-document.getElementById("contactBody").disabled = "true";
-window.scrollTo(0, 0)
-}
-function enableContact() {
-document.getElementById("homeBody").style.display = "none";
-document.getElementById("homeBody").disabled = "true";
-document.getElementById("werkwijzenBody").style.display = "none";
-document.getElementById("werkwijzenBody").disabled = "true";
-document.getElementById("tarievenBody").style.display = "none";
-document.getElementById("tarievenBody").disabled = "true";
-document.getElementById("blogBody").style.display = "none";
-document.getElementById("blogBody").disabled = "true";
-document.getElementById("contactBody").style.display = "block";
-document.getElementById("contactBody").disabled = "false";
-window.scrollTo(0, 0)
-}
-function sendEmail(){
-window.open('mailto:lotte.stouthuysen@gmail.com?subject=afspraak bij dietiste Lotte&body=voornaam: ' + document.getElementById("voornaam").value + '%0D%0A' +'naam: ' +document.getElementById("achternaam").value + '%0D%0A' + 'telefoonnummer(niet verplicht): '+ document.getElementById("telefoon").value + '%0D%0A' + 'Bericht: '+ document.getElementById("bericht").value);
-}
-</script>
+		<script type="text/javascript" src="LoadPageScript.js"></script>
 	</head>
 	<header>
 		<div class="headerBalk">
@@ -118,14 +31,13 @@ window.open('mailto:lotte.stouthuysen@gmail.com?subject=afspraak bij dietiste Lo
 	Here are the <a href="https://www.enablejavascript.io/">
 	instructions how to enable JavaScript in your web browser</a>.
 	</noscript>
-		<!-- op te vullen door op de knoppen in navigatie de drukken, standaard home -->
 	<div id="homeBody" class="bodyHome">
 	<div class="bodyblock1">
 	<span class="bodyText1">
 	<h1 style="	
 			color: #3B8686;
 			font-family: Nunito Sans;
-			font-size: 52px;
+			font-size: 42px;
 		  "} >
 		  Di&#235tiste Lotte Stouthuysen helpt je 
 	opweg naar een <b> gezonder leven! </b>
@@ -134,16 +46,16 @@ window.open('mailto:lotte.stouthuysen@gmail.com?subject=afspraak bij dietiste Lo
 	<h1 style="	
 			color: #0B1A1A;
 			font-family: Montserrat Regular;
-			font-size: 28px;
+			font-size: 22px;
 		  "} >
 		  		Als erkend diëtiste help ik je naar een gezonde eet- en leefstijl. Omdat niet iedereen hetzelfde is, zowel biologisch, psychologisch en sociaal, werk ik met individuele programma’s afgestemd op de cliënt die op dat moment voor mij zit. Ik volg geen diëten of modetrends, maar werk met voedingsadvies dat je kan volhouden.
 
 	</h1>
 	<br>
-	<button style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 24px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;" onclick="enableContact()"> Maak een afspraak </button> <u> <a onclick="enableWerkwijzen()"> Hoe ga ik te werk? </a> </u>
+	<button style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 20px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;" onclick="enableContact()"> Maak een afspraak </button> <u> <a onclick="enableWerkwijzen()"> Hoe ga ik te werk? </a> </u>
 	</span>
 	<span>
-		<img src="bodyImage1.PNG" alt="bodyImg1" width="600" height="600" style="margin-left:150px; margin-top: 50px;">
+		<img src="bodyImage1.PNG" alt="bodyImg1" width="480" height="480" style="margin-left:150px; margin-top: 50px;">
 	</span>
 	<br>
 	</div>
@@ -155,14 +67,14 @@ window.open('mailto:lotte.stouthuysen@gmail.com?subject=afspraak bij dietiste Lo
 	<h1 style="	
 			color: #3B8686;
 			font-family: Nunito Sans SemiBold;
-			font-size: 44px;
+			font-size: 36px;
 		  "} >
 	Wat doe ik?
 	</h1>
 	<h1 style="	
 			color: #0B1A1A;
 			font-family: Montserrat Regular;
-			font-size: 24px;
+			font-size: 20px;
 		  "} >
 Op basis van wetenschappelijk onderbouwd voedingsadvies kan ik de beste zorg aanbieden. 
 Daarnaast blijf ik mij bijscholen om op de hoogte te blijven van nieuwe ontwikkelingen.
@@ -195,11 +107,11 @@ Daarnaast blijf ik mij bijscholen om op de hoogte te blijven van nieuwe ontwikke
 	</div>
 	<br>
 	</h1>
-<div style="position: relatief; margin-left:1%;	width: 100%;margin-right: 1%; height: 250px;background-color: #EBF2F2;">
-		 <h1  style="margin-top: 20px; text-align: center;height: 60px;color: #3B8686;font-size: 44px;font-family: Nunito Sans;">Interesse? Neem contact op of maak een afspraak.</h1>
+<div style="position: relatief; margin-left:1%;	width: 100%;margin-right: 1%; height: 130px;background-color: #EBF2F2;">
+		 <h1  style="margin-top: 20px; text-align: center;height: 10px;color: #3B8686;font-size: 26px;font-family: Nunito Sans;">Interesse? Neem contact op of maak een afspraak.</h1>
 		 <div style="display: flex; justify-content: center; align-items: center;">
-		 	<button style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 24px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;margin: 10px;" onclick="enableContact()"> Maak een afspraak </button> 
-		 	<button style="outline: none ; color: #D4AF37; Height: 80px; width: 260px; border-color: #D4AF37;border-width: 5px; font-size: 24px; font-family: Nunito Sans Bold; border-radius: 12px;margin: 10px;" onclick="enableContact()" > Contacteer mij </button> 
+		 	<button style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 20px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;margin: 10px;" onclick="enableContact()"> Maak een afspraak </button> 
+		 	<button style="outline: none ; color: #D4AF37; Height: 80px; width: 260px; border-color: #D4AF37;border-width: 5px; font-size: 20px; font-family: Nunito Sans Bold; border-radius: 12px;margin: 10px;" onclick="enableContact()" > Contacteer mij </button> 
 		 </div>
 		</div>
 </div>
@@ -207,96 +119,96 @@ Daarnaast blijf ik mij bijscholen om op de hoogte te blijven van nieuwe ontwikke
     <div id="werkwijzenBody" class="bodyWerkwijzen" disabled="true">
 		<span >
 			<img src="werkwijzen.svg" style="float:right;margin: 40px;">
-		<h1 style="margin-left:5%; height: 56px;color: #3B8686;	font-family: Nunito Sans;font-size: 52px;letter-spacing: 0;line-height: 71px;">
+		<h1 style="margin-left:5%; height: 56px;color: #3B8686;	font-family: Nunito Sans;font-size: 42px;letter-spacing: 0;line-height: 71px;">
 			Hoe ga ik te werk?</h1>
-		<p style="margin-left:5%; width: 80%;margin-right: 1%;color:#0B1A1A;font-family: Nunito Sans;font-size: 24px;letter-spacing: 0;line-height: 29px;">
+		<p style="margin-left:5%; width: 80%;margin-right: 1%;color:#0B1A1A;font-family: Nunito Sans;font-size: 20px;letter-spacing: 0;line-height: 29px;">
 		Ik stel voedingsadvies samen op een wetenschappelijke manier zodat ik enkel de beste zorg kan aanbieden. <br>Daarnaast blijf ik bijscholen om mij zo verder te verdiepen en te specialiseren.<br><br>
 		U kan bij mij terecht van maandag tot donderdag. <br>Consultaties kunnen online via skype of face-to-face in Leuven, Martelarenplein 20 E.
 		Wilt u toch liever face-to-face? Dat kan zeker! <br>Ik ben &eacute&eacuten dag in de week te vinden in Leuven, Martelarenplein 20 E. <br>
 		Huisbezoeken kunnen ook altijd aangevraagd worden, hier wordt wel een kilometervergoeding (zie tarieven) aangerekend.																																   																												   
-		<h1 style="margin-left:5%; height: 52px;color: #3B8686;font-family: Nunito Sans;font-size: 52px;letter-spacing: 0;line-height: 71px;">Werking consultaties</h1>
-		<p style="margin-left:5%; width: 90%;color:#0B1A1A;font-family: Nunito Sans;font-size: 24px;letter-spacing: 0;line-height: 29px;">
+		<h1 style="margin-left:5%; height: 52px;color: #3B8686;font-family: Nunito Sans;font-size: 42px;letter-spacing: 0;line-height: 71px;">Werking consultaties</h1>
+		<p style="margin-left:5%; width: 90%;color:#0B1A1A;font-family: Nunito Sans;font-size: 20px;letter-spacing: 0;line-height: 29px;">
 		Om gericht advies te kunnen geven, duurt een eerste consultatie ongeveer een uur.<br> Tijdens dit uur bespreken we de hulpvraag en de eet- en leefgewoonten.
 		Op basis daarvan kan ik een gedetailleerd plan uitstippelen. <br><br> Opvolgconsultaties duren 30 min. 
 		Tijdens deze consultaties bespreek ik samen met u waar nog moeilijkheden zijn en zoeken we samen een oplossing.
 		<br> <br>
 		Ik geef consultaties in het Nederlands en Engels.
-		<h1 style="margin-left:5%; height: 50px;color: #3B8686;font-family: Nunito Sans;font-size: 52px;letter-spacing: 0;line-height: 71px;">Annulatie regeling</h1>
-		<p style="margin-left:5%; width: 90%;color:#0B1A1A;font-family: Nunito Sans;font-size: 24px;letter-spacing: 0;line-height: 29px;">
+		<h1 style="margin-left:5%; height: 50px;color: #3B8686;font-family: Nunito Sans;font-size: 42px;letter-spacing: 0;line-height: 71px;">Annulatie regeling</h1>
+		<p style="margin-left:5%; width: 90%;color:#0B1A1A;font-family: Nunito Sans;font-size: 20px;letter-spacing: 0;line-height: 29px;">
 			Indien je niet op een afspraak aanwezig kan zijn, gelieve minstens 24 uur op voorhand dit te melden. Indien dit niet gebeurd, vraag ik om de consultatie toch te vergoeden.
 		 </p>
 		</span>
 		<div style="position: relatief;	width: 99%;margin-right: 1%; height: 130px;background-color: #EBF2F2;">
-		 <h1  style="margin-top: 20px; text-align: center;height: 10px;color: #3B8686;font-size: 30px;font-family: Nunito Sans;">Interesse? Neem contact op of maak een afspraak.</h1>
+		 <h1  style="margin-top: 20px; text-align: center;height: 10px;color: #3B8686;font-size: 26px;font-family: Nunito Sans;">Interesse? Neem contact op of maak een afspraak.</h1>
 		 <div style="display: flex; justify-content: center; align-items: center;">
-		 	<button style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 24px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;margin: 10px;" onclick="enableContact()"> Maak een afspraak </button> 
-		 	<button style="outline: none ; color: #D4AF37; Height: 80px; width: 260px; border-color: #D4AF37;border-width: 5px; font-size: 24px; font-family: Nunito Sans Bold; border-radius: 12px;margin: 10px;" onclick="enableContact()" > Contacteer mij </button> 
+		 	<button style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 20px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;margin: 10px;" onclick="enableContact()"> Maak een afspraak </button> 
+		 	<button style="outline: none ; color: #D4AF37; Height: 80px; width: 260px; border-color: #D4AF37;border-width: 5px; font-size: 20px; font-family: Nunito Sans Bold; border-radius: 12px;margin: 10px;" onclick="enableContact()" > Contacteer mij </button> 
 		 </div>
 		</div>
 	</div>
 
 	<div id="tarievenBody" class="bodyTarieven" disabled="true">
 			<img src="tarieven.svg" style="float: right; padding: 6.5pc;">
-			<h1 style="margin-left:5%;height: 71px;color: #3B8686;	font-family: Nunito Sans;font-size: 52px;letter-spacing: 0;line-height: 71px;">
+			<h1 style="margin-left:5%;height: 71px;color: #3B8686;	font-family: Nunito Sans;font-size: 42px;letter-spacing: 0;line-height: 71px;">
 			Tarieven & terugbetaling</h1>
 				<span style="margin-left: 10pc;%;float: left; padding: 5px;width: 20pc;height: 180px;border-radius: 20px;background-color: #EBF2F2;margin: 2pc;">
-					<p style="color: #3B8686;font-family: Nunito Sans;font-size: 36px;letter-spacing: 0;text-align: center;">30 minuten</p>
-					<p style="color: #D4AF37;font-family: Nunito Sans;font-size: 44px;font-weight: bold;letter-spacing: 0;text-align: center;">€ 35</p>	
+					<p style="color: #3B8686;font-family: Nunito Sans;font-size: 30px;letter-spacing: 0;text-align: center;">30 minuten</p>
+					<p style="color: #D4AF37;font-family: Nunito Sans;font-size: 34px;font-weight: bold;letter-spacing: 0;text-align: center;">€ 35</p>	
 				</span>
 				<span style="float: left; padding: 5px;width: 20pc;height: 180px;border-radius: 20px;background-color: #EBF2F2;margin: 2pc;">
-					<p style="color: #3B8686;font-family: Nunito Sans;font-size: 36px;letter-spacing: 0;text-align: center;">1 uur</p>
-					<p style="color: #D4AF37;font-family: Nunito Sans;font-size: 44px;font-weight: bold;letter-spacing: 0;text-align: center;">€ 55</p>	
+					<p style="color: #3B8686;font-family: Nunito Sans;font-size: 30px;letter-spacing: 0;text-align: center;">1 uur</p>
+					<p style="color: #D4AF37;font-family: Nunito Sans;font-size: 34px;font-weight: bold;letter-spacing: 0;text-align: center;">€ 55</p>	
 				</span>
 
 			<div style="margin-bottom: 100px;">
-				 <h1  style="margin-left:5%; text-align: left;height: 60px;color: #3B8686;font-size: 44px;font-family: Nunito Sans; margin-top:300px;%"> Terugbetaling </h1>
-			<p style="margin-left:5%;width: 80pc; color: #0B1A1A;font-family: Montserrat;font-size: 26px;letter-spacing: 0;line-height: 29px;"> 
+				 <h1  style="margin-left:5%; text-align: left;height: 60px;color: #3B8686;font-size: 34px;font-family: Nunito Sans; margin-top:300px;%"> Terugbetaling </h1>
+			<p style="margin-left:5%;width: 80pc; color: #0B1A1A;font-family: Montserrat;font-size: 20px;letter-spacing: 0;line-height: 29px;"> 
 				Voor kinderen tussen 6 en 17 jaar met obesitas en overgewicht is er een terugbetaling voorzien. Het is belangrijk dat dit besproken wordt met de huisarts voordat u naar een diëtist gaat.
 				<br><br>
 				Personen met diabetes type 2 en personen die een zorgtraject volgen, hebben bij mij recht op terugbetaling van twee consulten per jaar, aangezien ik een door het Rijksinstituut voor Ziekte- en Invaliditeitsverzekering (RIZIV) erkend di&#235tiste ben.
 				<br><br>
 				Daarnaast geven verschillende mutualiteiten andere terugbetalingen. Dit kan je best met jouw mutualiteit bespreken.
 			</p>
-			<h1  style="margin-left:5%; text-align: left;height: 60px;color: #3B8686;font-size: 44px;font-family: Nunito Sans; margin-top:30px;"> Kilometervergoeding </h1>
-			<p style="margin-left:5%; margin-bottom:5%;width: 80pc; color: #0B1A1A;font-family: Montserrat;font-size: 26px;letter-spacing: 0;line-height: 29px;"> 
+			<h1  style="margin-left:5%; text-align: left;height: 60px;color: #3B8686;font-size: 36px;font-family: Nunito Sans; margin-top:30px;"> Kilometervergoeding </h1>
+			<p style="margin-left:5%; margin-bottom:5%;width: 80pc; color: #0B1A1A;font-family: Montserrat;font-size: 20px;letter-spacing: 0;line-height: 29px;"> 
 				Buiten Leuven (Ring Leuven) wordt er voor huisbezoeken een kilometervergoeding aangerekend van € 0.30 per kilometer. Dit wordt berekend vanuit Centrum Leuven.
 			</p>																																					  
 			</div>
-		<div style="position: relatief;	width: 98%;margin-right: 1%; height: 250px;background-color: #EBF2F2;">
-			<h1  style="margin-top: 20px; text-align: center;height: 60px;color: #3B8686;font-size: 44px;font-family: Nunito Sans;">Interesse? Neem contact op of maak een afspraak.</h1>
-			<div style="display: flex; justify-content: center; align-items: center;">
-				<button style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 24px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;margin: 10px;" onclick="enableContact()"> Maak een afspraak </button> 
-				<button style="outline: none ; color: #D4AF37; Height: 80px; width: 260px; border-color: #D4AF37;border-width: 5px; font-size: 24px; font-family: Nunito Sans Bold; border-radius: 12px;margin: 10px;" onclick="enableContact()" > Contacteer mij </button> 
-			</div>
+		<div style="position: relatief;	width: 99%;margin-right: 1%; height: 130px;background-color: #EBF2F2;">
+		 <h1  style="margin-top: 20px; text-align: center;height: 10px;color: #3B8686;font-size: 26px;font-family: Nunito Sans;">Interesse? Neem contact op of maak een afspraak.</h1>
+		 <div style="display: flex; justify-content: center; align-items: center;">
+		 	<button style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 20px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;margin: 10px;" onclick="enableContact()"> Maak een afspraak </button> 
+		 	<button style="outline: none ; color: #D4AF37; Height: 80px; width: 260px; border-color: #D4AF37;border-width: 5px; font-size: 20px; font-family: Nunito Sans Bold; border-radius: 12px;margin: 10px;" onclick="enableContact()" > Contacteer mij </button> 
+		 </div>
 		</div>
 	</div>
 	<div id="blogBody" class="bodyBlog" disabled="true">
 	<div style="height: 400px; text-align: center;">
-	<h1  style="margin-top: 300px; text-align: center;height: 60px;color: #3B8686;font-size: 44px;font-family: Nunito Sans;">Blog posts in aankomst! Kom later terug voor meer blogs.</h1>
+	<h1  style="margin-top: 300px; text-align: center;height: 60px;color: #3B8686;font-size: 36px;font-family: Nunito Sans;">Blog posts in aankomst! Kom later terug voor meer blogs.</h1>
 	</div>
 	<!---
 	<embed width="95%" height="1500px" src="https://timoversonnen.blogspot.com/2021/11/blog-post.html" target="_blank> -->
-	<div style="position: relatief;	width: 99%;margin-right: 1%; height: 250px;background-color: #EBF2F2;">
-		 <h1  style="margin-top: 20px; text-align: center;height: 60px;color: #3B8686;font-size: 44px;font-family: Nunito Sans;">Interesse? Neem contact op of maak een afspraak.</h1>
+	<div style="position: relatief;	width: 99%;margin-right: 1%; height: 130px;background-color: #EBF2F2;">
+		 <h1  style="margin-top: 20px; text-align: center;height: 10px;color: #3B8686;font-size: 26px;font-family: Nunito Sans;">Interesse? Neem contact op of maak een afspraak.</h1>
 		 <div style="display: flex; justify-content: center; align-items: center;">
-		 	<button style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 24px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;margin: 10px;"onclick="enableContact()"> Maak een afspraak </button> 
-		 	<button style="outline: none ; color: #D4AF37; Height: 80px; width: 260px; border-color: #D4AF37;border-width: 5px; font-size: 24px; font-family: Nunito Sans Bold; border-radius: 12px;margin: 10px;" onclick="enableContact()" > Contacteer mij </button> 
+		 	<button style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 20px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;margin: 10px;" onclick="enableContact()"> Maak een afspraak </button> 
+		 	<button style="outline: none ; color: #D4AF37; Height: 80px; width: 260px; border-color: #D4AF37;border-width: 5px; font-size: 20px; font-family: Nunito Sans Bold; border-radius: 12px;margin: 10px;" onclick="enableContact()" > Contacteer mij </button> 
 		 </div>
 		</div>
 	</div>
 	<div id="contactBody" class="bodyContact" disabled="true">
-	<h1 style="margin-left:5%; margin-top: 50px; color: #3B8686;	font-family: Nunito Sans;font-size: 24px;letter-spacing: 0;">
+	<h1 style="margin-left:5%; margin-top: 50px; color: #3B8686;	font-family: Nunito Sans;font-size: 20px;letter-spacing: 0;">
 	Online afspraak maken momenteel niet beschikbaar
 	</h1>
 	<div class="contactForm">
 	<h1 style="color: #3B8686;
 			font-family: Nunito Sans;
-			font-size: 52px;">
+			font-size: 42px;">
 		Contacteer mij</h1><br><br>
 		<span">
 		<h1 style="color: #3B8686;
 			font-family: Nunito Sans;
-			font-size: 32px;
+			font-size: 26px;
 			word-spacing: 200px;">
 			 Voornaam*
 			 Achternaam*
@@ -304,7 +216,7 @@ Daarnaast blijf ik mij bijscholen om op de hoogte te blijven van nieuwe ontwikke
 		</span>
 		<h1 style="color: #3B8686;
 			font-family: Nunito Sans;
-			font-size: 32px;
+			font-size: 26px;
 			word-spacing: 80px;">
 		<br>
 		<input type="text" id="voornaam" name="voornaam" style="margin-right: 80px;" placeholder="voornaam">
@@ -315,7 +227,7 @@ Daarnaast blijf ik mij bijscholen om op de hoogte te blijven van nieuwe ontwikke
 		Bericht* </p>
 		<textarea id="bericht" name="bericht" placeholder="type hier uw bericht"></textarea> <br><br>
 		</h1>
-		<button id="verstuurButton" style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 24px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;" onclick="sendEmail()"> verzenden </button>
+		<button id="verstuurButton" style="color: white; Height: 80px; width: 260px; background-color: #D4AF37; font-size: 20px; font-family: Nunito Sans Bold;border: none; border-radius: 12px;" onclick="sendEmail()"> verzenden </button>
 		<br>
 	</div>
 	<div class="contactInfo">
