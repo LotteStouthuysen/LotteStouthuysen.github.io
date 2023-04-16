@@ -81,8 +81,8 @@ textarea{
 .bodyText1{
 	display: inline-block; 
 	margin-left: 30px;
-	margin-top: 80px;
-	width: 40%;
+	margin-top: -50px;
+	width: 60%;
 	font-size: 25px;
 	vertical-align: top;
 }
